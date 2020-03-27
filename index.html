@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="class 1">
+    <title>Class one JSt</title>
+</head>
+<body>
+
+    
+</body>
+
+<script>
+/*
+   2. dado 
+    pepe
+    1
+    kamilo
+    carlos
+    10
+    p,1, k, c, 1
+    c, k, p, 1, 1
+*/
+
+  var strings = prompt("Cuantos datos deseas ingresar");
+
+  var cantidadDatos = Number(strings);
+  var letras = [];
+  var numero = [];
+
+  for(let i = 0; i<cantidadDatos; i++){
+      var prompts = prompt('dato'+[i]);
+      var datoGuardar = prompts.slice(0,1);
+
+      if(isNaN(datoGuardar)){
+      letras.push(datoGuardar);
+      console.log(typeof(prompts));
+        } else {
+            numero.push(datoGuardar);
+        }
+  }
+  
+  document.write(letras.sort() + "," + numero.sort());
+
+  
+  console.log(letras);
+  console.log(numero);
+
+
+
+</script>
+<script src="scripts.js"></script>
+</html>
